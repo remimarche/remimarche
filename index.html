@@ -8,18 +8,12 @@
     <title>Marr11317 Redirection Service</title>
     <meta name="description" content="Handle changes in Remi Marche's username by redirecting pages.">
     <meta name="author" content="Remi Marche">
-
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <h1 id="header"></h1>
-    </div>
     <script>
         const oldLocation = window.location.href;
         const newLocation = oldLocation.replace("remimarche", "marr11317")
-
-        document.getElementById("header").innerText = `Redirecting to ${newLocation}`;
 
         window.location.replace(newLocation);
     </script>
